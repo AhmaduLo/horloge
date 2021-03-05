@@ -16,13 +16,13 @@ function demarrerLaMontre() {
   let times = second + minute * 60 + heure * 3600;
 
   const secDeg = times * 6;
-  AIGUILLESEC.style.transform = `rotate(${secDeg}deg)`;
+  AIGUILLESEC.style.transform = "rotate(" + secDeg + "deg)";
 
   const minDeg = (times * 6) / 60;
-  AIGUILLEMIN.style.transform = `rotate(${minDeg}deg)`;
+  AIGUILLEMIN.style.transform = "rotate(" + minDeg + "deg)";
 
   const heurDeg = (times * 30) / 3600;
-  AIGUILLEHR.style.transform = `rotate(${heurDeg}deg)`;
+  AIGUILLEHR.style.transform = "rotate(" + heurDeg + "deg)";
 }
 
 var interval = setInterval(demarrerLaMontre, 1000);
